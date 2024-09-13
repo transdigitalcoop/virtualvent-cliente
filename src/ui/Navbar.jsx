@@ -10,7 +10,9 @@ const Navbar = () => {
     <>
       <nav className="navbar-container">
         <div className="white-curve">
-          <img src={Logo} alt="" />
+          <a href="">
+            <img src={Logo} alt="" />
+          </a>
         </div>
         <form action="">
           <input type="text" placeholder="Buscar" name="" id="" />
