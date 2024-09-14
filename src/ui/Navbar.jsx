@@ -4,15 +4,16 @@ import Logo from "../assets/img/logo.svg";
 import Carrito from "../assets/icons/shopcar.svg";
 import Usuario from "../assets/icons/user.svg";
 import Buscar from "../assets/icons/search.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
       <nav className="navbar-container">
         <div className="white-curve">
-          <a href="">
+          <Link to="/">
             <img src={Logo} alt="" />
-          </a>
+          </Link>
         </div>
         <form action="">
           <input type="text" placeholder="Buscar" name="" id="" />
@@ -23,14 +24,16 @@ const Navbar = () => {
         <div className="green-curve"></div>
         <ul>
           <li>
-            <a href="#">Tiendas oficiales</a>
+            <Link to="/tiendas">Tiendas oficiales</Link>
           </li>
           <li>
-            <a href="#">Categorias</a>
+            <Link to="/categorias">Categorias</Link>
           </li>
         </ul>
         <div className="icons">
-          <img className="shop_car" src={Carrito} alt="" />
+          <Link to="">
+            <img className="shop_car" src={Carrito} alt="" />
+          </Link>
         </div>
 
         <div className="login">
