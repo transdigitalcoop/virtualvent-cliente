@@ -1,56 +1,98 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #f8f9f9;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
 }
 
-h3 {
-  margin-top: 94px;
+h2 {
+  margin-top: 74px;
   margin-left: 133px;
   font-size: 25.11px;
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   color: #093f51;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.product-container {
+.productos-container {
   display: flex;
-  justify-content: center;
-  gap: 17px;
-  margin-top: 37px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+  margin-top: 22px;
 }
 
-.product-container .product {
-  background-color: #ffffff;
+.producto-card {
+  box-sizing: border-box;
+  margin: 17px;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 215px;
   height: 317px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 9.65px;
-  width: 200px;
+  border-radius: 9.653px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.product-container .product img {
-  margin-top: 20px;
-  height: 180px;
+.carousel {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.product-container .product h4 {
-  font-size: 19.31px;
-  margin-top: 20px;
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-button {
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  width: 69.504px;
+  height: 69.504px;
+  border-radius: 69.504px;
+  background: #fff;
+  box-shadow: 0px 1.931px 1.255px 0px rgba(113, 113, 113, 0.35);
+  transform: translateY(-50%);
+}
+
+.carousel-button.prev {
+  left: 118px;
+}
+
+.carousel-button.next {
+  right: 98px;
+}
+
+.producto-card img {
+  width: 60%;
+  height: 60%;
+}
+
+.producto-card h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.producto-card p {
+  margin: 5px 0;
+}
+
+.producto-card a {
+  margin: 5px 0;
+  text-decoration: none;
+  color: #349999;
   font-family: Nunito;
-  color: #323232;
-}
-
-.product-container .product p {
-  font-size: 19.31px;
-  font-family: Nunito;
-  color: #323232;
-}
-
-.product-container .product button {
-  margin-top: 20px;
+  font-size: 15.445px;
+  font-style: normal;
+  font-weight: 400;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Navbar.css";
 import Logo from "../assets/img/logo.svg";
 import Carrito from "../assets/icons/shopcar.svg";
+import Campana from "../assets/icons/notification.svg";
 import Usuario from "../assets/icons/user.svg";
 import Buscar from "../assets/icons/search.svg";
 import { Link } from "react-router-dom";
@@ -31,6 +32,9 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="icons">
+          <Link to="">
+            <img className="notification" src={Campana} alt="" />
+          </Link>
           <Link to="">
             <img className="shop_car" src={Carrito} alt="" />
           </Link>

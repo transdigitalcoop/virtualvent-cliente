@@ -7,6 +7,7 @@
   background-color: #349999;
   display: flex;
   height: 160px;
+  width: 100%;
 }
 
 .white-curve {
@@ -90,7 +91,8 @@
 }
 
 .navbar-container .icons {
-  margin-left: 450px;
+  display: flex;
+  margin-left: 390px;
   margin-top: 44px;
 }
 
@@ -102,7 +104,7 @@
   background-color: #093F51;
   border-bottom-left-radius: 100% 197px;
   width: 197px;
-  margin-left: 40px;
+  margin-left: 3%;
 }
 
 .navbar-container .login img{

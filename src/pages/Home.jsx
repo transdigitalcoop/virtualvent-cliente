@@ -1,36 +1,69 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../ui/Navbar.jsx";
-import Producto from "../assets/img/producto.png";
 import "../styles/Home.css";
 import axios from "axios";
+import beforeIcon from "../assets/icons/before.svg";
+import nextIcon from "../assets/icons/next.svg";
 
 const Home = () => {
-  const [productos, setProductos] = useState([]);
+  const [categorias, setCategorias] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState({});
 
   useEffect(() => {
-    const fetchProductos = async () => {
-      try {
-        const response = await axios.get("http://127.0.0.1:8000/api/products");
-        setProductos(response.data);
-      } catch (error) {
-        console.error("Error al obtener los productos:", error);
-      }
-    };
-
-    fetchProductos();
+    axios
+      .get("http://127.0.0.1:8000/api/categories")
+      .then((response) => {
+        setCategorias(response.data);
+        const initialIndex = {};
+        response.data.forEach((categoria) => {
+          initialIndex[categoria.id] = 0;
+        });
+        setCurrentIndex(initialIndex);
+      })
+      .catch((error) => {
+        console.error("There was an error fetching the data!", error);
+      });
   }, []);
+
+  const handleNext = (categoriaId) => {
+    setCurrentIndex((prevIndex) => ({
+      ...prevIndex,
+      [categoriaId]: Math.min(prevIndex[categoriaId] + 5, categorias.find(categoria => categoria.id === categoriaId).productos.length - 5),
+    }));
+  };
+
+  const handlePrev = (categoriaId) => {
+    setCurrentIndex((prevIndex) => ({
+      ...prevIndex,
+      [categoriaId]: Math.max(prevIndex[categoriaId] - 5, 0),
+    }));
+  };
 
   return (
     <>
       <Navbar />
-      <h3>Lista de productos</h3>
-      <div className="product-container">
-        {productos.map((producto) => (
-          <div className="product" key={producto.id}>
-            <img src={`http://127.0.0.1:8000/storage/${producto.imagen}`} alt="" />
-            <h4>{producto.nombre}</h4>
-            <p>{producto.precio}</p>
-            <button>Comprar</button>
+      <div>
+        {categorias.map((categoria) => (
+          <div key={categoria.id}>
+            <h2>{categoria.nombre}</h2>
+            <div className="productos-container">
+              <div className="carousel">
+                <button className="carousel-button prev" onClick={() => handlePrev(categoria.id)}><img src={beforeIcon}/></button>
+                <div className="carousel-inner">
+                  {categoria.productos.slice(currentIndex[categoria.id], currentIndex[categoria.id] + 5).map((producto) => (
+                    <div className="producto-card" key={producto.id}>
+                      <img src={`http://127.0.0.1:8000/storage/${producto.imagen}`} alt={producto.nombre} />
+                      <h4>{producto.nombre}</h4>
+                      <p>{`$ ${producto.precio}`}</p>
+                      <a href="">Ver más</a>
+                    </div>
+                  ))}
+                </div>
+                <button className="carousel-button next" onClick={() => handleNext(categoria.id)}>
+                  <img src={nextIcon}/>
+                </button>
+              </div>
+            </div>
           </div>
         ))}
       </div>
