@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../ui/Navbar.jsx";
 import "../styles/Home.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import beforeIcon from "../assets/icons/before.svg";
 import nextIcon from "../assets/icons/next.svg";
 
@@ -55,7 +56,7 @@ const Home = () => {
                       <img src={`http://127.0.0.1:8000/storage/${producto.imagen}`} alt={producto.nombre} />
                       <h4>{producto.nombre}</h4>
                       <p>{`$ ${producto.precio}`}</p>
-                      <a href="">Ver más</a>
+                      <Link className="link">Ver más</Link>
                     </div>
                   ))}
                 </div>

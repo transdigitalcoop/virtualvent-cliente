@@ -1,67 +1,75 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-
 
 .buscar-tiendas {
-    position: absolute;
-    display: flex;
-    background-color: white;
-    margin-top: 90px;
-    margin-left: 160px;
-    height: 48px;
-    border-radius: 10px;
-    border-color: transparent;
+  position: absolute;
+  display: flex;
+  background-color: white;
+  margin-top: 90px;
+  margin-left: 160px;
+  height: 48px;
+  border-radius: 10px;
+  border-color: transparent;
 }
 
-.buscar-tiendas input{
-    height: 48px;
-    width: 1184px;
-    font-size: 20px;
-    font-family: Nunito;
-    border-radius: 10px;
-    border-color: transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.buscar-tiendas input {
+  height: 48px;
+  width: 1184px;
+  font-size: 20px;
+  font-family: Nunito;
+  border-radius: 10px;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.buscar-tiendas button{
-    background-color: transparent;
-    border: none;
-    margin-left: -45px;
+.buscar-tiendas button {
+  background-color: transparent;
+  border: none;
+  margin-left: -45px;
 }
 
-.buscar-tiendas img{
-    margin-left: -5px;
-    margin-top: 10px;
-    height: 27px;
+.buscar-tiendas img {
+  margin-left: -5px;
+  margin-top: 10px;
+  height: 27px;
 }
 
 .tiendas-container {
-    display: flex;
-    margin-top: 50px;
+  display: flex;
+  margin-top: 50px;
 }
 
-.tiendas-container h3{
-    margin-top: 160px;
+.tiendas-container h3 {
+  margin-top: 130px;
+  margin-left: 160px;
+  color: #093f51;
+  text-align: center;
+  font-family: "Days One";
+  font-size: 33.817px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.tiendas-container .tiendas{
-    background-color: white;
-    margin-top: 200px;
-    display: flex;
-    gap: 10px;
-    margin-left: 10%;
+.tiendas-container .tiendas {
+  background-color: white;
+  height: 200px;
+  margin-top: 200px;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
 }
 
-.tiendas-container .tiendas img{
-    height: 70px;
+.tiendas-container .tiendas img {
+  height: 70px;
 }
 
-.tiendas-container .tiendas .tienda{
-    background-color: white;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tiendas-container .tiendas .tienda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
