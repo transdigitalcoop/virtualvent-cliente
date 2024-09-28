@@ -1,0 +1,25 @@
+.categorias-container {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.categorias-container h3 {
+  margin-top: 90px;
+  font-family: "Days One";
+  font-size: 32px;
+  font-style: normal;
+  color: #093f51;
+}
+
+.categorias-container .categorias {
+  margin-right: 80px;
+  text-align: left;
+}
+
+.categorias-container .categorias .categoria-nombre {
+  text-decoration: none;
+  color: #093f51;
+}

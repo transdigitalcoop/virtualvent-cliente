@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ShopCarTitle {
+  margin-top: 81px;
+  margin-left: 103px;
+  font-family: "Days One";
+  font-size: 28.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.shopcar-container {
+  border: 2px solid;
+  padding: 0 100px;
+}
+
+.product-container {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.product-container .product {
+  border: 2px solid red;
+  width: 1279px;
+  height: 205px;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.product-container .product img {
+  width: 110px;
+  height: 90px;
+  margin-top: 54px;
+  margin-left: 54px;
+}
+
+.product-container .product .product-details {
+  flex-direction: column;
+  margin-top: 54px;
+  margin-left: 36px;
+}

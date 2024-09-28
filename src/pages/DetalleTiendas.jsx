@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import Navbar from "../ui/Navbar";
 import "../styles/DetalleTiendas.css";
+import DetalleCategorias from "../assets/components/DetalleCategorias";
 
 const DetalleTiendas = () => {
   const { tiendaId } = useParams();
@@ -60,22 +62,24 @@ const DetalleTiendas = () => {
   return (
     <>
       <Navbar />
-      <div className="categorias-container">
-        <h3>Categorías</h3>
-      </div>
-      <div className="products-container">
-        <div className="products">
-          {productos.map((producto) => (
-            <div key={producto.id} className="product-item">
-              <img
-                src={`http://127.0.0.1:8000/storage/${producto.imagen}`}
-                alt=""
-              />
-              <h4>{producto.nombre}</h4>
-              <p>{producto.descripcion}</p>
-              <p>Precio: ${producto.precio}</p>
-            </div>
-          ))}
+      <div className="container">
+        <div className="container-categories">
+          <DetalleCategorias />
+        </div>
+        <div className="products-container">
+          <div className="products">
+            {productos.map((producto) => (
+              <div key={producto.id} className="product-item">
+                <img
+                  src={`http://127.0.0.1:8000/storage/${producto.imagen}`}
+                  alt={producto.nombre}
+                />
+                <h4>{producto.nombre}</h4>
+                <p>Precio: ${producto.precio}</p>
+                <Link className="link">Más información</Link>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

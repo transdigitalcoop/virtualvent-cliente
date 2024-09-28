@@ -1,0 +1,28 @@
+.filtro-tiendas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.filtro-tiendas-container h3 {
+  margin-top: 20px;
+  font-family: "Days One";
+  font-size: 32px;
+  font-style: normal;
+  color: #093f51;
+  margin-right: 50px;
+}
+
+.filtro-tiendas-container .filtro-tiendas {
+   width: 200px;
+   margin-left: 5px;
+   align-items: center;
+   justify-content: center;
+   text-align: left;
+}
+
+.filtro-tiendas-container .filtro-tiendas .filtro-tienda-nombre {
+  text-decoration: none;
+  color: #093f51;
+}

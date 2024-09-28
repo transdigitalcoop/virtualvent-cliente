@@ -1,0 +1,7 @@
+.container-categorias-categorias{
+    display: flex;
+}
+
+.container-categorias-categorias .categoria-container{
+    width: 20%;
+}
