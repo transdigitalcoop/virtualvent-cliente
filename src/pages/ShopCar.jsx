@@ -6,8 +6,8 @@ const ShopCar = () => {
   return (
     <>
       <Navbar />
-      <h3 className="ShopCarTitle">Carrito</h3>
-      <div className="shopcar-container">
+      <div className="car-container">
+        <h3 className="ShopCarTitle">Carrito</h3>
         <div className="product-container">
           <div className="product">
             <img src={Icono} alt="" />

@@ -4,6 +4,7 @@ import DetalleCategorias from "../assets/components/DetalleCategorias";
 import DetalleTiendas from "../assets/components/FiltroTiendas";
 import DetalleProductos from "../assets/components/DetalleProductos";
 import '../styles/Categorias.css'
+import Footer from "../ui/Footer";
 
 const Categorias = () => {
   return (
@@ -18,6 +19,7 @@ const Categorias = () => {
         </div>
         <DetalleProductos />
       </div>
+      <Footer />
     </>
   );
 };

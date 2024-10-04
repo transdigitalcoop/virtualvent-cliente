@@ -5,6 +5,7 @@ import axios from "axios";
 import Navbar from "../ui/Navbar";
 import "../styles/DetalleTiendas.css";
 import DetalleCategorias from "../assets/components/DetalleCategorias";
+import Footer from "../ui/Footer";
 
 const DetalleTiendas = () => {
   const { tiendaId } = useParams();
@@ -82,6 +83,7 @@ const DetalleTiendas = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

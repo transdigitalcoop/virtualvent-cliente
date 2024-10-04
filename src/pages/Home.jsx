@@ -5,6 +5,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import beforeIcon from "../assets/icons/before.svg";
 import nextIcon from "../assets/icons/next.svg";
+import Footer from "../ui/Footer.jsx";
 
 const Home = () => {
   const [categorias, setCategorias] = useState([]);
@@ -68,6 +69,7 @@ const Home = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </>
   );
 };

@@ -7,27 +7,30 @@
   margin-top: 81px;
   margin-left: 103px;
   font-family: "Days One";
+  color: #093F51;
   font-size: 28.88px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.shopcar-container {
+.car-container{
   border: 2px solid;
-  padding: 0 100px;
 }
 
 .product-container {
   border: 2px solid blue;
+  width: 51%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
+  margin-top: 30px;
+  margin-left: 80px;
 }
 
 .product-container .product {
   border: 2px solid red;
-  width: 1279px;
+  width: 760px;
   height: 205px;
   display: flex;
   background-color: #ffffff;

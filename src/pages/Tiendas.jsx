@@ -6,6 +6,7 @@ import Image from "../assets/img/image.png";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Footer from "../ui/Footer";
 
 const Tiendas = () => {
   const [tiendas, setTiendas] = useState([]);
@@ -47,6 +48,7 @@ const Tiendas = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

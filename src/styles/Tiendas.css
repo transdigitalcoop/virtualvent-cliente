@@ -39,6 +39,7 @@
 .tiendas-container {
   display: flex;
   margin-top: 50px;
+  height: 58vh;
 }
 
 .tiendas-container h3 {
