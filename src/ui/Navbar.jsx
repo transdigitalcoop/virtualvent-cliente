@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link to="">
             <img className="notification" src={Campana} alt="" />
           </Link>
-          <Link to="/">
+          <Link to="/carrito">
             <img className="shop_car" src={Carrito} alt="" />
           </Link>
         </div>

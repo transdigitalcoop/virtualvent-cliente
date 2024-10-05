@@ -35,17 +35,21 @@ const Tiendas = () => {
       </form>
       <div className="tiendas-container">
         <h3>Tiendas oficiales</h3>
-        <div className="tiendas">
-          {tiendas.map((tienda) => (
-            <div className="tienda" key={tienda.id}>
-              <Link to={`/store/${tienda.url}`}>
-                <img
-                  src={`http://127.0.0.1:8000/storage/${tienda.logo}` || Image}
-                  alt={tienda.razon_social}
-                />
-              </Link>
-            </div>
-          ))}
+        <div className="separador">
+        {Array.from({ length: Math.ceil(tiendas.length / 5) }).map((_, index) => (
+          <div className="tiendas" key={index}>
+            {tiendas.slice(index * 5, index * 5 + 5).map((tienda) => (
+              <div className="tienda" key={tienda.id}>
+                <Link to={`/store/${tienda.url}`}>
+                  <img
+                    src={`http://127.0.0.1:8000/storage/${tienda.logo}` || Image}
+                    alt={tienda.razon_social}
+                  />
+                </Link>
+              </div>
+            ))}
+          </div>
+        ))}
         </div>
       </div>
       <Footer />

@@ -38,12 +38,11 @@
 
 .tiendas-container {
   display: flex;
-  margin-top: 50px;
-  height: 58vh;
 }
 
 .tiendas-container h3 {
-  margin-top: 130px;
+  position: absolute;
+  margin-top: 150px;
   margin-left: 160px;
   color: #093f51;
   text-align: center;
@@ -54,15 +53,22 @@
   line-height: normal;
 }
 
+.tiendas-container .separador{
+  margin: 200px auto;
+  height: 60%;
+}
+
 .tiendas-container .tiendas {
+  margin-bottom: 20px;
   background-color: white;
   height: 200px;
-  margin-top: 200px;
   display: flex;
   gap: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .tiendas-container .tiendas img {
