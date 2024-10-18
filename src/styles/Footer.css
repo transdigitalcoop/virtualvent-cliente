@@ -1,74 +1,80 @@
-.footer-container{
-    margin-top: 20px;
-    background-color: #A3D1D1;
-    display: flex;
-    height: 80px;
+.footer-container {
+  margin-top: 20px;
+  background-color: #a3d1d1;
+  display: flex;
+  height: 80px;
 }
 
-.footer-container .footer-info{
-    width: 50%;
+.footer-container .footer-info {
+  width: 50%;
 }
 
-.footer-container .footer-info ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+.footer-container .footer-info ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-.footer-container .footer-info ul a{
-    text-decoration: none;
-    color: #437681;
-    font-size: 20px;
+.footer-container .footer-info ul a {
+  text-decoration: none;
+  color: #437681;
+  font-size: 20px;
 }
 
-.footer-container .footer-social{
-    width: 30%;
+.footer-container .footer-social {
+  width: 30%;
 }
 
-.footer-container .footer-social ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    margin-left: 320px;
+.footer-container .footer-social ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-left: 320px;
 }
 
-.footer-container .footer-social ul a{
-   text-decoration: none;
-   color: #437681;
-   font-size: 30px;
+.footer-container .footer-social ul a {
+  text-decoration: none;
+  color: #437681;
+  font-size: 30px;
 }
 
-.footer-logo-container{
-    width: 20%;
+.footer-logo-container {
+  width: 20%;
 }
 
 .footer-white-curve {
-    position: absolute;
-    width: 150px; /* Ajusta según lo necesites */
-    margin-left: 153px;
-    height: 80px;
-    background-color: #fff; /* Fondo blanco */
-    border-bottom-left-radius: 100% 150px;
-    z-index: 2; /* Asegurarse de que esté encima del fondo verde */
-    overflow: hidden; /* Para evitar que el ::before se salga del div */
+  position: absolute;
+  width: 150px; /* Ajusta según lo necesites */
+  margin-left: 153px;
+  height: 80px;
+  background-color: #fff; /* Fondo blanco */
+  border-bottom-left-radius: 100% 150px;
+  z-index: 2; /* Asegurarse de que esté encima del fondo verde */
+  overflow: hidden; /* Para evitar que el ::before se salga del div */
 }
 
-.footer-white-curve img{
-    margin-top: 18px;
-    margin-left: 65px;
+.footer-white-curve img {
+  margin-top: 18px;
+  margin-left: 65px;
 }
-  
-  .footer-green-curve {
-    position: absolute;
-    background-color: #CEEDED;;
-    margin-left: 100px;
-    width: 143px; /* Ajusta según lo necesites */
-    border-bottom-left-radius: 70% 100px;
-    height: 80px;
-  }
+
+.footer-green-curve {
+  position: absolute;
+  background-color: #ceeded;
+  margin-left: 100px;
+  width: 143px; /* Ajusta según lo necesites */
+  border-bottom-left-radius: 70% 100px;
+  height: 80px;
+}
+
+@media (max-width: 480px) {
+    .footer-container{
+        display: none;
+    }
+}

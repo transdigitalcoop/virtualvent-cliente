@@ -7,33 +7,35 @@
   margin-top: 81px;
   margin-left: 103px;
   font-family: "Days One";
-  color: #093F51;
+  color: #093f51;
   font-size: 28.88px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.car-container{
+.car-container {
   border: 2px solid;
 }
 
 .product-container {
-  border: 2px solid blue;
   width: 51%;
   display: flex;
   flex-direction: column;
   gap: 35px;
   margin-top: 30px;
   margin-left: 80px;
+  margin-bottom: 20px;
 }
 
 .product-container .product {
-  border: 2px solid red;
   width: 760px;
   height: 205px;
   display: flex;
   background-color: #ffffff;
+  border-color: #ddd;
+  border-radius: 9.653px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .product-container .product img {
@@ -43,8 +45,114 @@
   margin-left: 54px;
 }
 
+.product-container .product .product-options {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 70%;
+}
+
+.product-container .product .product-options input {
+  height: 20px;
+  width: 94px;
+  margin-top: 54px;
+  margin-left: 245px;
+  border-radius: 5px;
+  border: 2px solid #a3d1d1;
+}
+
+.product-container .product .product-options button {
+  background-color: #093f51;
+  color: white;
+  width: 94px;
+  height: 40px;
+  margin-left: 245px;
+  border-radius: 7.074px;
+  box-shadow: 0px 3.712px 3.712px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-family: Nunito;
+  font-size: 17.469px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .product-container .product .product-details {
   flex-direction: column;
   margin-top: 54px;
   margin-left: 36px;
+  width: 100px;
+  height: 60px;
+}
+
+.product-container .product .product-shop-details {
+  position: absolute;
+  border-top: 1px solid #ddd;
+  margin-top: 160px;
+  width: 760px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.product-container .product .product-shop-details p {
+  color: #349999;
+  text-align: justify;
+  font-family: Nunito;
+  font-size: 19.096px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 25px;
+}
+
+.resume-buy {
+  position: absolute;
+  top: 310px;
+  left: 870px;
+  width: 490px;
+  height: 300px;
+  background: #fff;
+  border-radius: 9.653px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.resume-buy .resume-title {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.resume-buy .resume-title h3 {
+  margin-left: 22px;
+}
+
+.resume-buy .resume-info{
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.resume-buy .resume-info p {
+  margin-left: 34px;
+  gap: 20px
+  ;
+}
+
+.resume-buy .resume-info button {
+  margin-left: 34px;
+  width: 419px;
+  height: 40px;
+  border-radius: 7.074px;
+  background: #093f51;
+  box-shadow: 0px 3.712px 3.712px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 17.469px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 135px;
 }

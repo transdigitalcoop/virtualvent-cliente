@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div>
+      <div className="general-container">
         {categorias.map((categoria) => (
           <div key={categoria.id}>
             <h2>{categoria.nombre}</h2>

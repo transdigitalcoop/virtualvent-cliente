@@ -22,44 +22,43 @@
 
 .green-curve {
   position: absolute;
-  background-color: #A3D1D1;
+  background-color: #a3d1d1;
   width: 360px; /* Ajusta según lo necesites */
   border-bottom-right-radius: 70% 300px;
   height: 160px;
 }
 
 .navbar-container form {
-    position: absolute;
-    display: flex;
-    background-color: white;
-    margin-left: 410px;
-    margin-top: 30px;
-    height: 48px;
-    border-radius: 10px;
-    border-color: transparent;
-  
+  position: absolute;
+  display: flex;
+  background-color: white;
+  margin-left: 410px;
+  margin-top: 30px;
+  height: 48px;
+  border-radius: 10px;
+  border-color: transparent;
 }
 
-.navbar-container form input{
-    height: 48px;
-    width: 930px;
-    font-size: 20px;
-    font-family: Nunito;
-    border-radius: 10px;
-    border-color: transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.navbar-container form input {
+  height: 48px;
+  width: 930px;
+  font-size: 20px;
+  font-family: Nunito;
+  border-radius: 10px;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.navbar-container form button{
-    background-color: transparent;
-    border: none;
-    margin-left: -45px;
+.navbar-container form button {
+  background-color: transparent;
+  border: none;
+  margin-left: -45px;
 }
 
-.navbar-container form button img{
-    margin-left: -5px;
-    margin-top: 10px;
-    height: 27px;
+.navbar-container form button img {
+  margin-left: -5px;
+  margin-top: 10px;
+  height: 27px;
 }
 
 .navbar-container img {
@@ -76,10 +75,10 @@
   margin-left: 430px;
 }
 
-.navbar-container ul li{
-    width: 180px;
-    justify-content: center;
-    padding: 0;
+.navbar-container ul li {
+  width: 180px;
+  justify-content: center;
+  padding: 0;
 }
 
 .navbar-container ul li a {
@@ -101,14 +100,102 @@
 }
 
 .navbar-container .login {
-  background-color: #093F51;
+  background-color: #093f51;
   border-bottom-left-radius: 100% 197px;
   width: 197px;
   margin-left: 3%;
 }
 
-.navbar-container .login img{
-    margin-left: 100px;
-    margin-top: 48px;
+.navbar-container .login img {
+  margin-left: 100px;
+  margin-top: 48px;
 }
 
+/* Estilos para el icono de menú */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Estilos para el menú desplegable */
+.menu {
+  
+  display: flex;
+  align-items: center;
+  gap: 50px; /* Mantener el espacio entre los elementos */
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    height: 70px;
+  }
+  .white-curve {
+    width: 220px; /* Ajusta según lo necesites */
+    height: 70px; /* Añadir altura al contenedor */
+    background-color: #fff; /* Fondo blanco */
+    border-bottom-right-radius: 100% 220px;
+  }
+  .navbar-container img {
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 17px;
+  }
+
+  .green-curve {
+    width: 250px; /* Ajusta según lo necesites */
+    border-bottom-right-radius: 70% 270px;
+    height: 70px;
+  }
+
+  .navbar-container ul {
+    margin-top: 13px;
+    width: 20px;
+    margin-left: 358px;
+  }
+
+  .form {
+    display: none;
+  }
+
+  .navbar-container .icons {
+    position: absolute;
+    right: 40px;
+    margin-top: 5px;
+  }
+
+  .navbar-container .icons img {
+    margin-left: 10px;
+    height: 25px;
+  }
+
+  .navbar-container .login {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 35px;
+    color: #093f51;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    gap: 10px; /* Reducir el espacio entre elementos en el menú desplegable */
+    z-index: 9;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+}

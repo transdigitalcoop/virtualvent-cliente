@@ -96,3 +96,10 @@ h2 {
   font-style: normal;
   font-weight: 400;
 }
+
+
+@media (max-width: 768px) {
+  .general-container{
+    display: none;
+  }
+}
