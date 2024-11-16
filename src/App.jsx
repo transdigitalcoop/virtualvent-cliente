@@ -5,6 +5,10 @@ import Tiendas from "./pages/Tiendas";
 import DetalleTiendas from "./pages/DetalleTiendas";
 import ShopCar from "./pages/ShopCar";
 import Categorias from "./pages/Categorias";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import LoginAdm from "../src/admin/pages/LoginAdm";
+import HomeAdm from "./admin/pages/HomeAdm";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +22,10 @@ function App() {
           <Route path="/store/:tiendaId" element={<DetalleTiendas />} />
           <Route path="/carrito" element={<ShopCar />} />
           <Route path="/categorias" element={<Categorias/>} />
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/registrarse" element={<Register/>}/>
+          <Route path="/admin" element={<LoginAdm/>}/>
+          <Route path="/admin/home" element={<HomeAdm/>}/>
         </Routes>
       </Router>
     </>

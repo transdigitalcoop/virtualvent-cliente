@@ -1,0 +1,95 @@
+.login-container {
+  height: 73.5vh;
+  margin-bottom: -6px;
+  display: flex;
+}
+
+.login-information {
+  margin-left: 15%;
+  margin-top: 10%;
+  height: 20%;
+}
+
+.login-information h1 {
+  text-align: center;
+  font-family: "Days One";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #093f51;
+}
+
+.login-information a{
+    color: #349999;
+    text-decoration: none;
+}
+
+.login-form {
+  margin-top: 5%;
+  margin-left: 150px;
+  background-color: white;
+  height: 400px;
+  width: 590px;
+  display: flex;
+  border-radius: 9.653px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.login-form .form-group {
+  margin-top: 30px;
+  margin-left: 37px;
+}
+
+.login-form .form-group label {
+  font-family: Nunito;
+  font-size: 21.081px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login-form .form-group input {
+  background-color: #ffffff;
+  width: 502px;
+  height: 51px;
+  border-radius: 7.074px;
+  border: 2px solid #ddd;
+  font-size: 20px;
+}
+
+.login-form p{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.login-form a{
+    color: #349999;
+    text-decoration: none;
+}
+
+.login-form button {
+  margin-left: 37px;
+  cursor: pointer;
+}
+
+.form-submit {
+  border-top: 1px solid #ddd;
+  width: 590px;
+  margin-top: 25px;
+}
+
+.form-submit button {
+  margin-top: 20px;
+  background-color: #093f51;
+  color: white;
+  width: 502px;
+  height: 51px;
+  border-radius: 7.074px;
+  border: 2px solid #093f51;
+  font-family: Nunito;
+  font-size: 21.081px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -54,7 +54,9 @@ const Navbar = () => {
         </div>
 
         <div className="login">
-          <img className="usuario_icon" src={Usuario} alt="" />
+          <Link to="/login">
+            <img className="usuario_icon" src={Usuario} alt="" />
+          </Link>
         </div>
       </nav>
     </>

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-container-login {
+    background-color: #349999;
+    display: flex;
+    height: 100px;
+    width: 100%;
+  }
+  
+  .white-curve-login {
+    position: absolute;
+    width: 280px; /* Ajusta según lo necesites */
+    height: 100px; /* Añadir altura al contenedor */
+    background-color: #fff; /* Fondo blanco */
+    border-bottom-right-radius: 100% 280px;
+    z-index: 2; /* Asegurarse de que esté encima del fondo verde */
+    overflow: hidden; /* Para evitar que el ::before se salga del div */
+  }
+  
+  .green-curve-login {
+    position: absolute;
+    background-color: #a3d1d1;
+    width: 360px; /* Ajusta según lo necesites */
+    border-bottom-right-radius: 70% 300px;
+    height: 100px;
+  }
+  
+  .navbar-container-login img {
+    height: 46px;
+    margin-top: 22px;
+    margin-left: 17px;
+  }

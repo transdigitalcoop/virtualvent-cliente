@@ -1,0 +1,32 @@
+.adm-nav-container {
+  height: 100px;
+  display: flex;
+  background-color: #349999;
+}
+
+.adm-nav-container-white-curve {
+  position: absolute;
+  width: 280px; /* Ajusta según lo necesites */
+  height: 100px; /* Añadir altura al contenedor */
+  background-color: #fff; /* Fondo blanco */
+  border-bottom-right-radius: 100% 280px;
+  overflow: hidden; /* Para evitar que el ::before se salga del div */
+}
+
+.adm-nav-container-white-curve img {
+  height: 46px;
+  margin-top: 25px;
+  margin-left: 17px;
+}
+
+.adm-nav-container-icon {
+  background-color: #093f51;
+  border-bottom-left-radius: 100% 197px;
+  width: 197px;
+  margin-left: 88%;
+}
+
+.adm-nav-container-icon img {
+  margin-top: 20px;
+  margin-left: 80px;
+}
