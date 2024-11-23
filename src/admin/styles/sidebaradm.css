@@ -52,6 +52,10 @@
     cursor: pointer;
 }
 
+.sidebar-adm-container .sidebar-adm-logout ul li:hover{
+    background-color: #a3d1d1;
+}
+
 .sidebar-adm-container .sidebar-adm-logout ul li a{
     text-decoration: none;
     color: #093f51;
