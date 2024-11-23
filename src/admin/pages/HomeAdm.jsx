@@ -1,11 +1,12 @@
-import React from 'react'
-import NavbarAdm from '../ui/NavbarAdm'
+import React from 'react';
+import NavbarAdm from '../ui/NavbarAdm';
+import SidebarAdm from '../ui/SidebarAdm';
 
 const HomeAdm = () => {
   return (
     <>
         <NavbarAdm />
-        <h1>Bienvenido a la vista adm</h1>
+        <SidebarAdm />
     </>
   )
 }
