@@ -14,9 +14,6 @@ const NavbarAdm = () => {
           </Link>
         </div>
         <div className="adm-nav-container-icon">
-          <Link to="">
-            <img src={Usuario} alt="" />
-          </Link>
         </div>
       </nav>
     </>
